@@ -17,21 +17,8 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Em destaque</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Entrevistas & Making of</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Novidades</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Procurar</button>
+                  <input class="form-control me-2" type="search" placeholder="Procurar filme" aria-label="Search" id="inputPesquisa">
+                  <button class="btn btn-outline-success" type="button" onclick="pesquisaFilmes()">Procurar</button>
                 </form>
               </div>
             </div>
@@ -43,12 +30,12 @@
                 <div class="dropdown">
                     <h2>Em destaque</h2>
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Gênero
+                    Mostrar
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Ação</a></li>
-                    <li><a class="dropdown-item" href="#">Terror</a></li>
-                    <li><a class="dropdown-item" href="#">Comédia</a></li>
+                        <li><a class="dropdown-item" href="#" onclick='carregaFilmes()'>Populares</a></li>
+                        <li><a class="dropdown-item" href="#" onclick='emBreveFilmes()'>Em breve</a></li>
+                        <li><a class="dropdown-item" href="#" onclick='avaliadosFilmes()'>Bem avaliados</a></li>
                     </ul>
                 </div>
             </div>
