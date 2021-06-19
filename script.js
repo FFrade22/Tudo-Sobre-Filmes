@@ -1,4 +1,4 @@
-const TMDB_ENDPOINT = 'http://api.themoviedb.org/3';
+const TMDB_ENDPOINT = 'https://api.themoviedb.org/3';
 const API_KEY = '7ddd5c53ebf2b0c8b7c274bebfea64aa';
 const IMG_PREFIX = 'https://image.tmdb.org/t/p/w500'
 const LINGUAGEM = '&language=pt-BR'
@@ -38,7 +38,7 @@ function exibeFilmes(evt){
     
     for(let i=0; i<filmes.results.length; i++){
         let ident = filmes.results[i].id;
-        let linkFilme = 'http://themoviedb.org/movie/' + ident;
+        let linkFilme = 'https://themoviedb.org/movie/' + ident;
         let titulo = filmes.results[i].title;
         let sinopse = filmes.results[i].overview;
         let imagem = IMG_PREFIX + filmes.results[i].poster_path;
