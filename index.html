@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Filmes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="carregaFilmes()">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <img src="img/logo.png" id="logo" alt="Logo Tudo Sobre Filmes">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                  <input class="form-control me-2" type="search" placeholder="Procurar filme" aria-label="Search" id="inputPesquisa">
+                  <button class="btn btn-outline-success" type="button" onclick="pesquisaFilmes()">Procurar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <div id="emDestaque">
+            <div class="row">
+                <div class="dropdown">
+                    <h2>Em destaque</h2>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mostrar
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" onclick='carregaFilmes()'>Populares</a></li>
+                        <li><a class="dropdown-item" href="#" onclick='emBreveFilmes()'>Em breve</a></li>
+                        <li><a class="dropdown-item" href="#" onclick='avaliadosFilmes()'>Bem avaliados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="tela">
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
